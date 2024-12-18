@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/love"
+    tools:context=".create">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name EditText and Warning -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:required="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/warningName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name is required"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Nickname EditText -->
+            <EditText
+                android:id="@+id/editTextNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nickname"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Gender Spinner and Warning -->
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/warningGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select a gender"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Marital Status Spinner and Warning -->
+            <Spinner
+                android:id="@+id/spinnerMaritalStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/warningMaritalStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select marital status"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Date of Birth Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Spinner
+                    android:id="@+id/spinnerMonth"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="1dp"/>
+                <Spinner
+                    android:id="@+id/spinnerDay"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="1dp"/>
+                <Spinner
+                    android:id="@+id/spinnerYear"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: "
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/warningDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth is required"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Hobbies, Favorite Color, Favorite Movie -->
+            <EditText
+                android:id="@+id/editTextHobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hobbies (comma separated)"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextFavoriteColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Favorite Color"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextFavoriteMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Favorite Movie"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Country Spinner -->
+            <Spinner
+                android:id="@+id/spinnerPlanToVisitCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/warningCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select a country"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Pet Spinner and Favorite Pet -->
+            <Spinner
+                android:id="@+id/spinnerPet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextFavoritePet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your pet here if not listed"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/warningPet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet name is required"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/biege"
+                android:text="Create" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
